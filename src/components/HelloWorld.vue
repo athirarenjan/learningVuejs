@@ -1,4 +1,4 @@
-<template v-if="show">
+<template>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Learning Links</h2>
@@ -11,16 +11,15 @@
     </ul>
   </div>
 </template>
-<template v-else> 
-<event-handler>
-</event-handler>
+<template>
+  <event-handler> </event-handler>
 </template>
 
 <script>
-import EventHandler from "@/components/EventHandler"
+import EventHandler from "@/components/EventHandler";
 export default {
   name: "HelloWorld",
-  components:{EventHandler},
+  components: { EventHandler },
   data() {
     return {
       msg: "Learning Vue.js",

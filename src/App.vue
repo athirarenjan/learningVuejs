@@ -1,18 +1,18 @@
 <template>
-  <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld/>
-  </div>
+  <div id="app"><img width="25%" src="./assets/logo.png" /> <HelloWorld /></div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld";
-import EventHandler from "@/components/EventHandler"
+import EventHandler from "@/components/EventHandler";
+import FormInput from "@/components/EventHandler";
+
 export default {
   name: "App",
   components: {
     HelloWorld,
-    EventHandler
+    EventHandler,
+    FormInput
   }
 };
 </script>
