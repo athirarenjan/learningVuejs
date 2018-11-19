@@ -7,11 +7,12 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld";
-
+import EventHandler from "@/components/EventHandler"
 export default {
   name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
+    EventHandler
   }
 };
 </script>

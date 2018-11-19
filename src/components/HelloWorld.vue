@@ -11,11 +11,16 @@
     </ul>
   </div>
 </template>
-<template v-else> </template>
+<template v-else> 
+<event-handler>
+</event-handler>
+</template>
 
 <script>
+import EventHandler from "@/components/EventHandler"
 export default {
   name: "HelloWorld",
+  components:{EventHandler},
   data() {
     return {
       msg: "Learning Vue.js",
